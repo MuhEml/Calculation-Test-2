@@ -1,0 +1,12 @@
+from random import*
+a=randint(1,999)
+b=randint(1,999)
+c=a+b
+j=1
+d=int(input(f"What is {a} + {b}? "))
+
+while d!=c:
+  j=j+1
+  d=int(input("Oops! Write another answer: "))
+if d==c:
+  print(f"Good job! You did it in your {j} th try!")
